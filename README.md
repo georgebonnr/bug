@@ -1,4 +1,4 @@
-# adebugger
+#  bug
 
 ### Easier debugging in your ES6+ arrow functions!
 *Arrow functions + expressions are cool and fun, and also annoying to debug.*
@@ -26,7 +26,7 @@ const myFunction = () => {
 here's a better way:
 ```js
 const myFunction = () => (
-    (a=>{debugger})() ||
+    (()=>{debugger})() ||
     Math.random() * Math.random()
 )
 ```
@@ -34,7 +34,7 @@ const myFunction = () => (
 
 
 ### What does this package do?:
-This just makes `(a=>{debugger})() ||` easy to trigger as a snippet in SublimeText or Atom.
+This just makes `(()=>{debugger})() ||` easy to trigger as a snippet in SublimeText or Atom.
 
 
 ![](http://g.recordit.co/D0SNooCOAF.gif)
@@ -56,7 +56,7 @@ This just makes `(a=>{debugger})() ||` easy to trigger as a snippet in SublimeTe
 
 ### Usage Tips:
 
-- You can pass a variable in as an argument to the 'a' param if you're impatient and just want to use this like a beefy console.log
+- You can pass a variable in as an argument to the debugger expression if you're impatient and just want to use this like a beefy console.log
 - If you don't care about inspecting the line of code *directly after* your debugger expression before it runs, just `step over` twice to be on your merry way (same as a debugger statement)
 - If you do care about inspecting the very next line of code, then the best way to replicate the behavior of a debugger statement is:
     1. Go *back up* one level in the call stack: <img src="https://www.evernote.com/l/APQCtx8eN-RPvq1tB_TJxeEqej1MrEobYOQB/image.png" width="210" height="52"> (you can now see your function's scope and can inspect local vars)
