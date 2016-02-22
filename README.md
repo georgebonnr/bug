@@ -58,8 +58,8 @@ This just makes `(a=>{debugger})() ||` easy to trigger as a snippet in SublimeTe
 - If you don't care about inspecting the line of code *directly after* your debugger expression before it runs, just `step over` twice to be on your merry way (same as a debugger statement)
 - If you do care about inspecting the very next line of code, then the best way to replicate the behavior of a debugger statement is:
     
-    1. Go *back up* one level in the call stack:  
-    ![](https://www.evernote.com/l/APQCtx8eN-RPvq1tB_TJxeEqej1MrEobYOQB/image.png =210x52)
+    1. Go *back up* one level in the call stack:
+    <img src="https://www.evernote.com/l/APQCtx8eN-RPvq1tB_TJxeEqej1MrEobYOQB/image.png" width="210" height="52">
     
         (you can now see your function's scope and can inspect local vars)
     
