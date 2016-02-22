@@ -35,6 +35,8 @@ const myFunction = () => (
 
 ### What does this package do?:
 This just makes `(a=>{debugger})() ||` easy to trigger as a snippet in SublimeText or Atom.
+
+
 ![](http://g.recordit.co/D0SNooCOAF.gif)
 
 **Instructions for Sublime Text:**
