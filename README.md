@@ -35,6 +35,7 @@ const myFunction = () => (
 
 ### What does this package do?:
 This just makes `(a=>{debugger})() ||` easy to trigger as a snippet in SublimeText or Atom.
+![](http://g.recordit.co/D0SNooCOAF.gif)
 
 **Instructions for Sublime Text:**
 
@@ -56,5 +57,10 @@ This just makes `(a=>{debugger})() ||` easy to trigger as a snippet in SublimeTe
 - You can pass a variable in as an argument to the 'a' param if you're impatient and just want to use this like a beefy console.log
 - If you don't care about inspecting the line of code *directly after* your debugger expression before it runs, just `step over` twice to be on your merry way (same as a debugger statement)
 - If you do care about inspecting the very next line of code, then the best way to replicate the behavior of a debugger statement is:
-    1. Go *back up* one level in the call stack (you can now see your function's scope and can inspect local vars)
+    
+    1. Go *back up* one level in the call stack:  
+    ![](https://www.evernote.com/l/APQCtx8eN-RPvq1tB_TJxeEqej1MrEobYOQB/image.png =210x52)
+    
+        (you can now see your function's scope and can inspect local vars)
+    
     2. 'Step out of current function' (`F11` or `Shift+Cmd+;` in Chrome DevTools) to break out of the debugger expression scope and execute the next line of your code.
