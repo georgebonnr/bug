@@ -1,0 +1,4 @@
+'.source.js':
+  'bug':
+    'prefix': 'bug'
+    'body': '(a=>{debugger})(${1:}) ||'
