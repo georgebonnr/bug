@@ -5,9 +5,7 @@
 
 before:
 ```js
-const myFunction = () => (
-    Math.random() * Math.random()
-)
+const myFunction = () => Math.random() * Math.random()
 ```
 
 
@@ -25,10 +23,7 @@ const myFunction = () => {
 
 here's a better way:
 ```js
-const myFunction = () => (
-    (()=>{debugger})() ||
-    Math.random() * Math.random()
-)
+const myFunction = () => (()=>{debugger})() || Math.random() * Math.random()
 ```
 😸
 
